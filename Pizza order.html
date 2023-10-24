@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Pizza Order App</title>
+</head>
+<body>
+    <header>
+        <h1>Pizza Order App</h1>
+    </header>
+    <main>
+        <section id="order-form">
+            <h2>Order Your Pizza</h2>
+            <form>
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label>Toppings:</label>
+                <div id="toppings">
+                    <label>
+                        <input type="checkbox" value="pepperoni"> Pepperoni
+                    </label>
+                    <label>
+                        <input type="checkbox" value="mushrooms"> Mushrooms
+                    </label>
+                    <label>
+                        <input type="checkbox" value="olives"> Olives
+                    </label>
+                    <label>
+                        <input type="checkbox" value="sausage"> Sausage
+                    </label>
+                </div>
+                <button type="button" onclick="calculateTotal()">Order Now</button>
+            </form>
+        </section>
+        <section id="order-summary">
+            <h2>Order Summary</h2>
+            <div id="summary"></div>
+        </section>
+    </main>
+</body>
+</html>
